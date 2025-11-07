@@ -1,0 +1,142 @@
+/* ---------- GLOBAL ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ---------- TITLE ---------- */
+h1 {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* ---------- SEARCH INPUT ---------- */
+input {
+  width: 70%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #1c1c1c;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  background: #2d2d2d;
+  transform: scale(1.02);
+}
+
+/* ---------- PAGINATION ---------- */
+.pagination {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+button {
+  padding: 10px 18px;
+  border: none;
+  background: #ff004c;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #ff3373;
+  transform: scale(1.05);
+}
+
+.pagination span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* ---------- MOVIE LIST ---------- */
+.movie-list {
+  margin-top: 30px;
+  display: grid;
+
+  /* ✅ FINAL FIX: ensures centered rows */
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+  justify-items: center;   /* ✅ centers each card */
+  justify-content: center; /* ✅ centers entire grid */
+  width: 100%;
+}
+
+/* ---------- MOVIE CARD ---------- */
+.movie-card {
+  background: #1a1a1a;
+  width: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.1);
+}
+
+.movie-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 20px rgba(255, 0, 76, 0.4);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+}
+
+/* ---------- MOVIE INFO ---------- */
+.movie-info {
+  padding: 10px;
+  text-align: left;
+}
+
+.movie-info h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #ff3373;
+}
+
+.movie-info p {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-bottom: 5px;
+}
+
+/* ---------- LOADING + ERROR ---------- */
+.loading {
+  margin-top: 20px;
+  font-size: 20px;
+  color: yellow;
+}
+
+.error {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ff5555;
+}
