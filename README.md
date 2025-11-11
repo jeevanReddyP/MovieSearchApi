@@ -28,7 +28,7 @@ The Movie Search App is a frontend React application that enables users to searc
 📦 Installation & Setup
 
 Clone the repository
-git clone https://github.com/your-username/MovieSearchApi.git
+git clone https://github.com/jeevanReddyP/MovieSearchApi.git
 
 Install dependencies
 npm install
@@ -48,8 +48,6 @@ vite.config.js
 🔑 Environment Variables
 
 Create a .env file in the root directory:
-
-VITE_TMDB_API_KEY = your_tmdb_api_key
 
 You can get your API key from https://www.themoviedb.org/
 
@@ -71,11 +69,7 @@ Movie details page
 
 Pagination
 
-Add to favorites list
-
 Dark mode
-
-Filter by genre/year
 
 🏷 Topics
 
